@@ -1,21 +1,14 @@
 import Image from "next/image";
-
+import Header from "./components/Header";
 // Your other import statements here...
 
 export default function Home() {
   return (
     <>
+    <Header/>
       <div style={{ maxWidth: '800px', margin: 'auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
         <h1 style={{ textAlign: 'center', color: '#333' }}>Giselle Ross</h1>
         <p style={{ textAlign: 'center' }}>Software Developer</p>
-
-        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-          <p>Email: gisellerosstech@gmail.com</p>
-          <p>Phone: 951-483-9111</p>
-          <p>Location: Tampa, FL</p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/gisellerosstech" target="_blank" rel="noopener noreferrer">linkedin.com/in/gisellerosstech</a></p>
-          <p>GitHub: <a href="https://github.com/giselleRoss" target="_blank" rel="noopener noreferrer">github.com/giselleRoss</a></p>
-        </div>
 
         <h3 style={{ color: 'navy' }}>Technical Skills:</h3>
         <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
