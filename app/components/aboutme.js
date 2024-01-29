@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import me from "../../public/me.jpg";
+import pro from "../../public/pro.jpg";
 const Aboutme = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Aboutme = () => {
           <h2 className="sm:text-3xl text-2xl text-black-900 font-medium title-font mb-2 md:w-2/5">
             About Me
           </h2>
-          <Image src={me} width={150} height={150} />
+          <Image src={pro} width={150} height={150} />
           <div className="md:w-3/5 md:pl-6">
             <p className="leading-relaxed text-base">
               I am a full stack developer with a passion for learning and
@@ -20,10 +20,6 @@ const Aboutme = () => {
               career in the tech industry and am excited to see where this new
               journey takes me.{" "}
             </p>
-            <div className="flex md:mt-4 mt-6">
-              <a className="text-indigo-500">LinkedIn</a>
-              <a className="ml-2 text-indigo-500">GitHub</a>
-            </div>
           </div>
         </div>
       </section>
