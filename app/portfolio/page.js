@@ -1,14 +1,17 @@
-import React from 'react'
+import React from "react";
 import Header from "../components/Header";
-import Link from "next/link";
-import Footer from '../components/Footer';
+import Image from "next/image";
+import dadJokes from "../../public/dadJokes.jpg"
+import PortfolioCom from "../components/portfolio";
+import Footer from "../components/Footer";
 
-export default function portfolio() {
+
+export default function PortfolioPage() {
   return (
     <>
-    <Header/>
-    <div>portfolio</div>
-    <Footer/>
+    <Header />
+    <PortfolioCom />
+    <Footer />
     </>
     
   )

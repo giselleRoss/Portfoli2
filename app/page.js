@@ -2,7 +2,7 @@ import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Link from "next/link";
-import portfolio from "./components/portfolio";
+
 
 // Your other import statements here...
 
@@ -12,15 +12,21 @@ export default function Home() {
       <div className="bg-amber-200">
         <Header />
         <div className="sm:text-center md:max-xl:flex p-60 font-serif ">
-          <h1 className="text-6xl mb-6">Hi! I'm Giselle.</h1> 
-          <h1 className="text-6xl hover:animate-bounce mb-6">A Software Engineer</h1>
-          <h2>I find joy in crafting functional websites and applications, meticulously evaluating and testing each line of code to ensure optimal performance and user satisfaction.</h2>
+          <h1 className="text-6xl mb-6">Hi! I'm Giselle.</h1>
+          <h1 className="text-6xl hover:animate-bounce mb-6">
+            A Software Engineer
+          </h1>
+          <h2>
+            I find joy in crafting functional websites and applications,
+            meticulously evaluating and testing each line of code to ensure
+            optimal performance and user satisfaction.
+          </h2>
         </div>
       </div>
       <Footer />
     </>
-  )
-};
+  );
+}
 // }
 // <h3 className="text-navy">Technical Skills:</h3>
 //           <ul className="list-circle pl-20">
@@ -51,7 +57,7 @@ export default function Home() {
 //           <ul className="list-disk pl-20">
 //             <li>
 //               Dad Jokes | Full Stack Engineer |
-//                 <Link href="https://github.com/giselleRoss/frontend-project.git"> Github</Link> 
+//                 <Link href="https://github.com/giselleRoss/frontend-project.git"> Github</Link>
 //                 <ul>
 //                   <li>Created a front-end application that utilizes AJAX to pull dad jokes from an API randomly or can be searched</li>
 //                   <li>Implemented event listeners for clicks, keypress, & play events in order to hear laughter & populate jokes when the image or search button is clicked, & when the Enter key is pressed</li>
@@ -60,7 +66,7 @@ export default function Home() {
 //             </li>
 //             <li>
 //               Paw Trainers | Full Stack Engineer |
-//                 <Link href="https://github.com/JacobR96/PawTrainers.git"> Github</Link> 
+//                 <Link href="https://github.com/JacobR96/PawTrainers.git"> Github</Link>
 //                 <ul>
 //                   <li>Improved efficiency & scalability by utilizing AWS backend with PostgreSQL for the database, incorporating S3 for additional functionality</li>
 //                   <li>Drove a 30% increase in user engagement by building & optimizing the articles component & HTML using HTML, CSS, JavaScript, & React</li>

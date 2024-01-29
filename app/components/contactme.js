@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import Link from "next/link";
 
 export default function Contact() {
@@ -13,11 +12,15 @@ export default function Contact() {
             <p>Location: Tampa, FL</p>
             <p>
               LinkedIn:{" "}
-              <Link href="https://www.linkedin.com/in/gisellerosstech">linkedin.com/in/gisellerosstech</Link>
+              <Link href="https://www.linkedin.com/in/gisellerosstech">
+                linkedin.com/in/gisellerosstech
+              </Link>
             </p>
             <p>
               GitHub:{" "}
-              <Link href="https://github.com/giselleRoss">github.com/giselleRoss</Link>
+              <Link href="https://github.com/giselleRoss">
+                github.com/giselleRoss
+              </Link>
             </p>
           </div>
         </div>
