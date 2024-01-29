@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import portfolio from "./portfolio";
 
 export default function Header() {
   return (

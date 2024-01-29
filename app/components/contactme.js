@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <>
-      <section className="text-gray-600 body-font relative">
+      <section className="bg-amber-200 sm:text-center md:max-xl:flex p-60 font-serif text-gray-600 body-font relative">
         <div className=" py-4 px-6 flex flex-col items-center justify-center">
           <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <p>Email: gisellerosstech@gmail.com</p>
@@ -13,23 +13,11 @@ export default function Contact() {
             <p>Location: Tampa, FL</p>
             <p>
               LinkedIn:{" "}
-              <a
-                href="https://www.linkedin.com/in/gisellerosstech"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/in/gisellerosstech
-              </a>
+              <Link href="https://www.linkedin.com/in/gisellerosstech">linkedin.com/in/gisellerosstech</Link>
             </p>
             <p>
               GitHub:{" "}
-              <a
-                href="https://github.com/giselleRoss"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                github.com/giselleRoss
-              </a>
+              <Link href="https://github.com/giselleRoss">github.com/giselleRoss</Link>
             </p>
           </div>
         </div>
