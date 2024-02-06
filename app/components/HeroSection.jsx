@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import me from "../../public/minime.png";
 import { TypeAnimation } from "react-type-animation";
 
 export const HeroSection = () => {
@@ -47,12 +46,11 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#CDFADB] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image src={me}
+          <div className="rounded-full bg-[#CDFADB] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] relative">
+            <Image src="../../public/minime.png"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              layout="fill" objectFit="cover"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
             />
           </div>
         </div>
