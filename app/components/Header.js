@@ -57,8 +57,8 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="py-4 px-12 flex flex-wrap justify-between items-center bg-red-300">
-      <div className="flex flex-col">
+    <div className="py-4 flex flex-wrap justify-between items-center bg-red-300">
+      <div className="flex flex-col w-full">
         <Link href="/">
           <span className="text-black text-2xl font-semibold mb-2">Giselle Ross</span>
           <span className="text-black text-sm font-semibold py-4 px-6">Software engineer</span>
