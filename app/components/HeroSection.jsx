@@ -13,7 +13,7 @@ export const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hi, I'm {" "}
             </span>
-            <br/>
+            <br></br>
             <TypeAnimation
               sequence={[
                 "Giselle",
@@ -27,7 +27,6 @@ export const HeroSection = () => {
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "2em", display: "inline-block" }}
               repeat={Infinity}
             />
           </h1>

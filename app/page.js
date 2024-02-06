@@ -10,10 +10,10 @@ export default function Home() {
     <>
     <main className="flex min-h-screen flex-col bg-amber-200 container">
       <Header />
-      <div className="container mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
       </div>
-      
+      <Footer />
       
     </main>
       {/* <div className="bg-amber-200 min-h-screen flex flex-col items-center justify-center">
@@ -32,7 +32,7 @@ export default function Home() {
           </p>
         </div>
       </div> */}
-      <Footer />
+      
     </>
   );
 }
