@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import {useState} from 'react'
 
 const DesktopMenu = () => (
   <div className="hidden lg:flex space-x-4">
