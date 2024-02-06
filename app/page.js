@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "./components/Header";
+import { HeroSection } from "./components/HeroSection";
 import Footer from "./components/Footer";
 import Link from "next/link";
 
@@ -7,8 +8,16 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="bg-amber-200 min-h-screen flex flex-col items-center justify-center">
-        <Header />
+    <main className="flex min-h-screen flex-col bg-amber-200 container">
+      <Header />
+      <div className="container mx-auto px-12 py-4">
+        <HeroSection />
+      </div>
+      
+      
+    </main>
+      {/* <div className="bg-amber-200 min-h-screen flex flex-col items-center justify-center">
+        
         <div className="text-center p-8 md:p-16 lg:p-20 font-serif">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6">
             Hi! I'm Giselle.
@@ -22,7 +31,7 @@ export default function Home() {
             optimal performance and user satisfaction.
           </p>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
