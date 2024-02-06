@@ -100,7 +100,7 @@ const Header = () => {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-10 bg-red-300 bg-opacity-90 ${width <= 780 ? 'px-2' : ''}`}>
-        <div className="flex flex-wrap items-center justify-between mx-auto px-4">
+        <div className="flex flex-wrap items-center justify-between mx-auto">
           <Link href={"/"}>
             <span className="text-black text-2xl font-semibold mb-2">
               Giselle Ross
