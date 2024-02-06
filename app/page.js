@@ -1,10 +1,9 @@
+'use client';
 import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Link from "next/link";
 
-
-// Your other import statements here...
 
 export default function Home() {
   return (
