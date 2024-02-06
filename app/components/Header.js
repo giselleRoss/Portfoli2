@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import {useState, useEffect} from 'react'
 
@@ -56,15 +57,11 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="bg-red-300 py-4 px-6 flex flex-wrap justify-between items-center">
+    <div className="py-4 px-6 flex flex-wrap justify-between items-center bg-red-300">
       <div className="flex flex-col">
         <Link href="/">
-          <span className="text-black text-2xl font-semibold mb-2">
-            Giselle Ross
-          </span>
-          <span className="text-black text-sm font-semibold py-4 px-6">
-            Software engineer
-          </span>
+          <span className="text-black text-2xl font-semibold mb-2">Giselle Ross</span>
+          <span className="text-black text-sm font-semibold py-4 px-6">Software engineer</span>
         </Link>
         <div className="lg:hidden">
           <OpenMenuDrawerButton onClick={toggleDrawer} />
@@ -74,3 +71,11 @@ const Header = () => {
     </div>
 )}
 export default Header;
+<Link href="/">
+          <span className="text-black text-2xl font-semibold mb-2">
+            Giselle Ross
+          </span>
+          <span className="text-black text-sm font-semibold py-4 px-6">
+            Software engineer
+          </span>
+        </Link>
