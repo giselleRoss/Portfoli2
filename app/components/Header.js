@@ -28,31 +28,47 @@ const DesktopMenu = () => (
 
 const MobileMenu = ({ visibleDrawer, toggleDrawer }) => (
   <div
-    className={`lg:hidden top-16 right-4 bg-white-800 p-2 space-y-2 ${
+    className={`lg:hidden fixed top-0 right-0 bg-white bg-opacity-80 ${
       visibleDrawer ? "visible" : "invisible"
     }`}
   >
-    <ul>
-    <li><Link href="/" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
-      Home
-    </Link>
-    </li>
-    <li><Link href="/portfolio" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
-      Portfolio
-    </Link>
-    </li>
-    <li><Link href="/aboutMe" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
-      About Me
-    </Link>
-    </li>
-    <li><Link href="/contactMe" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
-      Contact Me
-    </Link>
-    </li>
+    <ul className="flex flex-col p-4">
+      <li>
+        <Link
+          href="/"
+          className="block py-2 pl-3 pr-4 text-black sm:text-xl hover:text-[#b13147] rounded"
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/portfolio"
+          className="block py-2 pl-3 pr-4 text-black sm:text-xl hover:text-[#b13147] rounded"
+        >
+          Portfolio
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/aboutMe"
+          className="block py-2 pl-3 pr-4 text-black sm:text-xl hover:text-[#b13147] rounded"
+        >
+          About Me
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/contactMe"
+          className="block py-2 pl-3 pr-4 text-black sm:text-xl hover:text-[#b13147] rounded"
+        >
+          Contact Me
+        </Link>
+      </li>
     </ul>
     <button
       onClick={toggleDrawer}
-      className="text-white block hover:text-white-300"
+      className="text-black block hover:text-black p-4 text-xl font-semibold top-0 right-0"
     >
       Close
     </button>
@@ -60,7 +76,7 @@ const MobileMenu = ({ visibleDrawer, toggleDrawer }) => (
 );
 
 const OpenMenuDrawerButton = ({ onClick }) => (
-  <button onClick={onClick} className="text-black focus:outline-none">
+  <button onClick={onClick} className="text-black focus:outline-none absolute top-0 right-0 p-4">
     <svg
       className="h-6 w-6"
       fill="none"
@@ -87,20 +103,23 @@ const Header = () => {
   const toggleDrawer = () => {
     setVisibleDrawer(!visibleDrawer);
   };
+
   const handleResize = () => {
     setWidth(window.innerWidth);
   };
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-10 bg-red-300 bg-opacity-90 ${width <= 780 ? 'px-2' : ''}`}>
-        <div className="flex flex-wrap items-center justify-between mx-auto">
+      <nav className={`fixed top-0 left-0 right-0 z-10 bg-red-300 bg-opacity-90 ${width <= 780 ? 'px-2' : ''} ${width <= 780 ? 'h-16' : ''}`}>
+        <div className={`flex justify-between items-center mx-auto p-4 ${width <= 780 ? 'flex-col' : 'flex-row'}`}>
           <Link href={"/"}>
             <span className="text-black text-2xl font-semibold mb-2">
               Giselle Ross
@@ -109,7 +128,7 @@ const Header = () => {
               Software engineer
             </span>
           </Link>
-          <div className="lg:hidden">
+          <div className={`${width > 780 ? 'hidden' : 'lg:hidden'}`}>
             <OpenMenuDrawerButton onClick={toggleDrawer} />
           </div>
           {width > 780 ? (
@@ -125,4 +144,5 @@ const Header = () => {
     </>
   );
 };
+
 export default Header;
