@@ -33,19 +33,19 @@ const MobileMenu = ({ visibleDrawer, toggleDrawer }) => (
     }`}
   >
     <ul>
-    <li><Link href="/" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+    <li><Link href="/" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
       Home
     </Link>
     </li>
-    <li><Link href="/portfolio" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+    <li><Link href="/portfolio" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
       Portfolio
     </Link>
     </li>
-    <li><Link href="/aboutMe" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+    <li><Link href="/aboutMe" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
       About Me
     </Link>
     </li>
-    <li><Link href="/contactMe" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+    <li><Link href="/contactMe" className="block py-2 pl-3 pr-4 text-[#b13147] sm:text-xl rounded md:p-0 hover:text-black">
       Contact Me
     </Link>
     </li>
@@ -99,7 +99,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90">
+      <nav className="fixed top-0 left-0 right-0 z-10 bg-red-300 bg-opacity-90">
         <div className="flex flex-wrap items-center justify-between mx-auto px-4">
           <Link href={"/#home"}>
             <span className="text-black text-2xl font-semibold mb-2">
