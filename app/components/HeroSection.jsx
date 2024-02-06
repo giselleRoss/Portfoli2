@@ -47,7 +47,7 @@ export const HeroSection = () => {
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#CDFADB] w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] relative">
-            <Image src="../../public/minime.png"
+            <Image src="public/minime.png"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={250}
               height={250}
