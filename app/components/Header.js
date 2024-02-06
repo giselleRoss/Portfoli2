@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link";
-import React from "react";
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 const DesktopMenu = () => (
   <div className="hidden lg:flex space-x-4">
@@ -41,7 +40,7 @@ const OpenMenuDrawerButton = ({onClick}) => (
 )
 
 const Header = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 0)
   const [visibleDrawer, setVisibleDrawer] = useState(false);
 
   const toggleDrawer = () => {
