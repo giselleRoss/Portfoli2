@@ -8,7 +8,6 @@ export default function Contact() {
         <div className=" py-4 px-6 flex flex-col items-center justify-center">
           <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <p>Email: gisellerosstech@gmail.com</p>
-            <p>Phone: 951-483-9111</p>
             <p>Location: Tampa, FL</p>
             <p>
               LinkedIn:{" "}
