@@ -13,7 +13,7 @@ const DesktopMenu = () => (
 
 
 const MobileMenu = ({visibleDrawer, toggleDrawer}) => (
-  <div className={`lg:hidden absolute top-16 right-4 bg-white-800 p-2 space-y-2 ${visibleDrawer ? 'visible' : 'invisible'}`}>
+  <div className={`lg:hidden top-16 right-4 bg-white-800 p-2 space-y-2 ${visibleDrawer ? 'visible' : 'invisible'}`}>
       <Link href="/" className="text-white block hover:text-white-300">Home</Link>
       <Link href="/portfolio" className="text-white block hover:text-white-300">Portfolio</Link>
       <Link href="/aboutMe" className="text-white block hover:text-white-300">About Me</Link>
@@ -57,7 +57,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="py-4 px-6 flex flex-wrap justify-between items-center bg-red-300">
+    <div className="py-4 px-12 flex flex-wrap justify-between items-center bg-red-300">
       <div className="flex flex-col">
         <Link href="/">
           <span className="text-black text-2xl font-semibold mb-2">Giselle Ross</span>
@@ -71,11 +71,3 @@ const Header = () => {
     </div>
 )}
 export default Header;
-<Link href="/">
-          <span className="text-black text-2xl font-semibold mb-2">
-            Giselle Ross
-          </span>
-          <span className="text-black text-sm font-semibold py-4 px-6">
-            Software engineer
-          </span>
-        </Link>
