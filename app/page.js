@@ -9,24 +9,24 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-    <div className="bg-amber-200">
-      <Header />
-      <div className="sm:text-center md:max-xl:flex p-8 md:p-16 lg:p-20 font-serif ">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6">
-          Hi! I'm Giselle.
-        </h1>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl hover:animate-bounce mb-4 sm:mb-6">
-          A Software Engineer
-        </h1>
-        <h2 className="text-sm sm:text-base lg:text-lg">
-          I find joy in crafting functional websites and applications,
-          meticulously evaluating and testing each line of code to ensure
-          optimal performance and user satisfaction.
-        </h2>
+      <div className="bg-amber-200 min-h-screen flex flex-col items-center justify-center">
+        <Header />
+        <div className="text-center p-8 md:p-16 lg:p-20 font-serif">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6">
+            Hi! I'm Giselle.
+          </h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl hover:animate-bounce mb-4 sm:mb-6">
+            A Software Engineer
+          </h1>
+          <p className="text-sm sm:text-base lg:text-lg">
+            I find joy in crafting functional websites and applications,
+            meticulously evaluating and testing each line of code to ensure
+            optimal performance and user satisfaction.
+          </p>
+        </div>
       </div>
-    </div>
-    <Footer />
-  </>
+      <Footer />
+    </>
   );
 }
 // }
