@@ -1,30 +1,30 @@
 import Link from "next/link";
 import React from "react";
 
-const desktopMenu = () => (
+const DesktopMenu = () => (
   <div className="hidden lg:flex space-x-4">
-      <Link href="/" className="hover:text-gray-300">Home</Link>
-      <Link href="/portfolio" className="hover:text-gray-300">Portfolio</Link>
-      <Link href="/aboutMe" className="hover:text-gray-300">About Me</Link>
-      <Link href="/contactMe" className="hover:text-gray-300">Contact Me</Link>
+      <Link href="/" className="hover:text-white-300">Home</Link>
+      <Link href="/portfolio" className="hover:text-white-300">Portfolio</Link>
+      <Link href="/aboutMe" className="hover:text-white-300">About Me</Link>
+      <Link href="/contactMe" className="hover:text-white-300">Contact Me</Link>
   </div>
 )
 
 
-const mobileMenu = ({visibleDrawer, toggleDrawer}) => (
-  <div className={`lg:hidden absolute top-16 right-4 bg-gray-800 p-2 space-y-2 ${visibleDrawer ? 'visible' : 'invisible'}`}>
-      <Link href="/" className="text-white block hover:text-gray-300">Home</Link>
-      <Link href="/portfolio" className="text-white block hover:text-gray-300">Portfolio</Link>
-      <Link href="/aboutMe" className="text-white block hover:text-gray-300">About Me</Link>
-      <Link href="/contactMe" className="text-white block hover:text-gray-300">Contact Me</Link>
-      <button onClick={toggleDrawer} className="text-white block hover:text-gray-300">
+const MobileMenu = ({visibleDrawer, toggleDrawer}) => (
+  <div className={`lg:hidden absolute top-16 right-4 bg-white-800 p-2 space-y-2 ${visibleDrawer ? 'visible' : 'invisible'}`}>
+      <Link href="/" className="text-white block hover:text-white-300">Home</Link>
+      <Link href="/portfolio" className="text-white block hover:text-white-300">Portfolio</Link>
+      <Link href="/aboutMe" className="text-white block hover:text-white-300">About Me</Link>
+      <Link href="/contactMe" className="text-white block hover:text-white-300">Contact Me</Link>
+      <button onClick={toggleDrawer} className="text-white block hover:text-white-300">
       Close
     </button>
   </div>
   )
 
 
-const openMenuDrawerButton = ({onClick}) => (
+const OpenMenuDrawerButton = ({onClick}) => (
   <button onClick={onClick} className="text-white focus:outline-none">
     <svg
       className="h-6 w-6"
@@ -67,9 +67,9 @@ const Header = () => {
           </span>
         </Link>
         <div className="lg:hidden">
-          <openMenuDrawerButton onClick={toggleDrawer} />
+          <OpenMenuDrawerButton onClick={toggleDrawer} />
         </div>
-        {width > 780 ? <desktopMenu /> : <mobileMenu visibleDrawer={visibleDrawer} toggleDrawer={toggleDrawer} />}
+        {width > 780 ? <DesktopMenu /> : <MobileMenu visibleDrawer={visibleDrawer} toggleDrawer={toggleDrawer} />}
       </div>
     </div>
 )}
