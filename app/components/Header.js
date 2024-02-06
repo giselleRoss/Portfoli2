@@ -5,19 +5,19 @@ import { useState, useEffect } from "react";
 const DesktopMenu = () => (
   <div className="menu hidden md:block md:w-auto" id="header">
     <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-    <li><Link href="/#home" className="hover:text-white-300">
+    <li><Link href="/" className="hover:text-white-300">
       Home
     </Link>
     </li>
-    <li><Link href="/#portfolio" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+    <li><Link href="/portfolio" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
       Portfolio
     </Link>
     </li>
-    <li><Link href="/#aboutMe" className="hover:text-white-300">
+    <li><Link href="/aboutMe" className="hover:text-white-300">
       About Me
     </Link>
     </li>
-    <li><Link href="/#contactMe" className="hover:text-white-300">
+    <li><Link href="/contactMe" className="hover:text-white-300">
       Contact Me
     </Link>
     </li>
