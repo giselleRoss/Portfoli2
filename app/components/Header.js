@@ -9,7 +9,7 @@ const DesktopMenu = () => (
       Home
     </Link>
     </li>
-    <li><Link href="/portfolio" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+    <li><Link href="/portfolio" className="hover:text-white-300">
       Portfolio
     </Link>
     </li>
@@ -33,19 +33,19 @@ const MobileMenu = ({ visibleDrawer, toggleDrawer }) => (
     }`}
   >
     <ul>
-    <li><Link href="/#home" className="hover:text-white-300">
+    <li><Link href="/" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
       Home
     </Link>
     </li>
-    <li><Link href="/#portfolio" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
+    <li><Link href="/portfolio" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
       Portfolio
     </Link>
     </li>
-    <li><Link href="/#aboutMe" className="hover:text-white-300">
+    <li><Link href="/aboutMe" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
       About Me
     </Link>
     </li>
-    <li><Link href="/#contactMe" className="hover:text-white-300">
+    <li><Link href="/contactMe" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
       Contact Me
     </Link>
     </li>
