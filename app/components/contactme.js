@@ -9,13 +9,13 @@ export default function Contact() {
             <div style={{ textAlign: "center", marginBottom: "20px" }}>
               <p>Email: gisellerosstech@gmail.com</p>
               <p>Location: Tampa, FL</p>
-              <p>
+              <p className="text-black">
                 LinkedIn:{" "}
                 <Link href="https://www.linkedin.com/in/gisellerosstech">
                   Giselle's Linkedin
                 </Link>
               </p>
-              <p>
+              <p className="text-black">
                 GitHub:{" "}
                 <Link href="https://github.com/giselleRoss">
                   Giselle's GitHub
