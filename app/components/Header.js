@@ -32,18 +32,24 @@ const MobileMenu = ({ visibleDrawer, toggleDrawer }) => (
       visibleDrawer ? "visible" : "invisible"
     }`}
   >
-    <Link href="/" className="text-white block hover:text-white-300">
+    <ul>
+    <li><Link href="/#home" className="hover:text-white-300">
       Home
     </Link>
-    <Link href="/portfolio" className="text-white block hover:text-white-300">
+    </li>
+    <li><Link href="/#portfolio" className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white">
       Portfolio
     </Link>
-    <Link href="/aboutMe" className="text-white block hover:text-white-300">
+    </li>
+    <li><Link href="/#aboutMe" className="hover:text-white-300">
       About Me
     </Link>
-    <Link href="/contactMe" className="text-white block hover:text-white-300">
+    </li>
+    <li><Link href="/#contactMe" className="hover:text-white-300">
       Contact Me
     </Link>
+    </li>
+    </ul>
     <button
       onClick={toggleDrawer}
       className="text-white block hover:text-white-300"
@@ -95,7 +101,7 @@ const Header = () => {
     <>
       <nav className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90">
         <div className="flex flex-wrap items-center justify-between mx-auto px-4">
-          <Link href={"/"}>
+          <Link href={"/#home"}>
             <span className="text-black text-2xl font-semibold mb-2">
               Giselle Ross
             </span>
