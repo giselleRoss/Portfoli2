@@ -1,17 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
-import Image from "next/image";
-import pro from "../../public/pro.jpg";
-import Aboutme from "../components/aboutme";
+import Contact from "../components/contactme";
 import Footer from "../components/Footer";
 
-export default function About() {
+export default function Contactpage() {
   return (
     <>
       <main className="flex min-h-screen flex-col bg-amber-200">
         <Header />
         <div className="mt-24 mx-auto px-12 py-4">
-          <Aboutme />
+          <Contact />
         </div>
         <Footer />
       </main>

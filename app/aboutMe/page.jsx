@@ -1,22 +1,18 @@
 import React from "react";
 import Header from "../components/Header";
-import Image from "next/image";
-import dadJokes from "../../public/dadJokes.jpg"
-import PortfolioCom from "../components/portfolio";
+import Aboutme from "../components/aboutme";
 import Footer from "../components/Footer";
 
-
-export default function PortfolioPage() {
+export default function About() {
   return (
     <>
       <main className="flex min-h-screen flex-col bg-amber-200">
         <Header />
         <div className="mt-24 mx-auto px-12 py-4">
-          <PortfolioCom />
+          <Aboutme />
         </div>
         <Footer />
       </main>
     </>
-    
-  )
+  );
 }
