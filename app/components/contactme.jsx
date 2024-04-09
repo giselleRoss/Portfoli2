@@ -1,41 +1,20 @@
-"use client";
-import React, { useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import GithubIcon from "../../public/GithubIcon.png";
 import LinkedinIcon from "../../public/LinkedinIcon.png";
+import { AppContext }from "../context/context";
+import React, { useContext } from "react";
 
 
 export default function Contact() {
+  const { handleSubmit, emailSubmitted } = useContext(AppContext);
 
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-
-  const handleSubmit = async (e) => {
+  const handleFormSubmission = async (e) => {
     e.preventDefault();
-    const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    console.log(await response.json());
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    handleSubmit(e);
   };
+
 
   return (
     <>
@@ -73,7 +52,7 @@ export default function Contact() {
           <p className="text-green-800 text-xlg mt-2">
             Email sent successfully!
           </p>
-        ) : (<form className="flex flex-col" onSubmit={handleSubmit}>
+        ) : (<form className="flex flex-col" onSubmit={handleFormSubmission}>
         <div className="mb-6">
               <label
                 htmlFor="name"
