@@ -118,7 +118,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-10 bg-red-300 bg-opacity-90 ${width <= 780 ? 'px-2' : ''} ${width <= 780 ? 'h-16' : ''}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-10 bg-red-300 bg-opacity-80 ${width <= 780 ? 'px-2' : ''} ${width <= 780 ? 'h-16' : ''}`}>
         <div className={`flex justify-between items-center mx-auto p-4 ${width <= 780 ? 'flex-col' : 'flex-row'}`}>
           <Link href={"/"}>
             <span className="text-black text-2xl font-semibold mb-2">
