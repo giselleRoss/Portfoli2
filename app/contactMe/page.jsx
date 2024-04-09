@@ -13,11 +13,9 @@ export default function Contactpage() {
         
 <Header />
         <div className="mt-24 mx-auto px-12 py-4">
-          <Contact />
+          {/* <Contact /> */}
         </div>
         <Footer />
-
-       
         
       </main> 
       </FormProvider>
