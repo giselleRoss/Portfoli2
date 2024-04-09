@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -15,7 +16,7 @@ function PortfolioCom() {
     <div className="p-4 bg-gray-200 rounded shadow-md">
       <p className="text-xl font-bold mb-4">Project 1</p>
       <Link href="http://dadjokesproject.s3-website.us-east-2.amazonaws.com">
-        <Image src={dadJokes} width={400} height={400} className="mt-5" />
+        <Image src={dadJokes} alt="dad jokes" width={400} height={400} className="mt-5" />
       </Link>
       <p className="mt-4">
         Created a front-end application that utilizes event listeners and AJAX to pull dad jokes from an API randomly or can be searched. Updated element properties using jQuery for DOM manipulation.
@@ -25,7 +26,7 @@ function PortfolioCom() {
     <div className="p-4 bg-gray-200 rounded shadow-md">
       <p className="text-xl font-bold mb-4">Project 2</p>
       <Link href="paw-trainers.vercel.app">
-        <Image src={pawMentor} width={400} height={400} className="mt-5" />
+        <Image src={pawMentor} alt="paw mentor" width={400} height={400} className="mt-5" />
       </Link>
       <p className="mt-4">
         Contributed to the Paw Trainers app using React, Next.js, S3, HTML, and TailWindCSS.

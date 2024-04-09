@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import Image from "next/image";
 import pro from "../../public/pro.jpg";
@@ -10,7 +12,7 @@ const Aboutme = () => {
           <h2 className="sm:text-3xl text-2xl text-black-900 font-medium title-font mb-2 md:w-2/5">
             My Story in Web Development
           </h2>
-          <Image src={pro} width={150} height={150} />
+          <Image src={pro} width={150} height={150} alt="image"/>
           <div className="md:w-3/5 md:pl-6 mt-12">
             <p className="leading-relaxed text-base">
               Hi there! 👋 I'm Giselle, and my journey into web development has
