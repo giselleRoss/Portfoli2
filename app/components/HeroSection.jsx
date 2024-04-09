@@ -22,9 +22,9 @@ export const HeroSection = () => {
                     2000,
                     "A Software Engineer",
                     1000,
-                    "A Software Developer",
+                    "A Front-End Developer",
                     1000,
-                    "A Web Developer",
+                    "A Back-End Developer",
                     1000,
                   ]}
                   wrapper="span"
@@ -42,10 +42,12 @@ export const HeroSection = () => {
                   href="/contactMe"
                   className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#CDFADB] to-[#CDFADB] hover:bg-slate-200 text-black"
                 >
-                  Hire Me
+                    Hire Me
+                  
                 </Link>
                 <Link
-                  href="/Giselle'sResume.pdf"
+                  href="/GisellesResume.pdf"
+                  target="_blank"
                   className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#CDFADB] to-[#CDFADB] text-black mt-3"
                 >
                   <span className="block bg-[#57b2d3] hover:bg-slate-800 rounded-full px-5 py-2">

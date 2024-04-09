@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "./components/Header";
-import { HeroSection } from "./components/HeroSection";
+import { HeroSection } from "@/app/components/HeroSection";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -12,9 +12,7 @@ export default function Home() {
         <HeroSection />
       </div>
       <Footer />
-      
     </main>
-
     </>
   );
 }

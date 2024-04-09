@@ -1,45 +1,66 @@
-'use client'
-import { createContext, useState } from 'react';
+// 'use client'
+// import React, { createContext, useState } from 'react';
 
-export const AppContext = createContext();
+// export const AppContext = createContext();
 
-export function FormProvider({ children }) {
-    const [emailSubmitted, setEmailSubmitted] = useState(false);
+// export function FormProvider({ children }) {
+//     const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
+//     const handleSubmit = async (e) => {
+//       e.preventDefault();
+//       const { name, email, subject, message } = e.target;
 
-    const response = await fetch(endpoint, options);
-    console.log(await response.json());
+//       // Validate form fields
+//       if (!name.value || !email.value || !subject.value || !message.value) {
+//           console.error('All fields are required.');
+//           return;
+//       }
+//       // Prepare data for submission
+//       const data = {
+//           name: name.value,
+//           email: email.value,
+//           subject: subject.value,
+//           message: message.value,
+//       };
+//       const JSONdata = JSON.stringify(data);
+//       const endpoint = "/api/send";
+// console.log(JSONdata)
+//       // Fetch options
+//       const options = {
+//           method: "POST",
+//           headers: {
+//               "Content-Type": "application/json",
+//           },
+//           body: JSONdata,
+//       };
 
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
-  };
+//       try {
+//           // Send request
+//           const response = await fetch(endpoint, options);
 
-    // Return review data and fetch function.
-    return (
-        <AppContext.Provider value={{
-            handleSubmit,
-            emailSubmitted
-        }}>
-            {children}
-        </AppContext.Provider>
-    );
-}
+//           // Check for errors
+//           if (!response.ok) {
+//               throw new Error('Failed to send message.');
+//           }
+
+//           // Log response
+//           console.log(await response.json());
+          
+//           // Update state if successful
+//           setEmailSubmitted(true);
+//           console.log("Message sent.");
+//       } catch (error) {
+//           console.error('Error sending message:', error.message);
+//       }
+//   };
+
+//     // Return review data and fetch function.
+//     return (
+//       <AppContext.Provider value={{
+//           handleSubmit,
+//           emailSubmitted
+//       }}>
+//           {children}
+//       </AppContext.Provider>
+//   );
+// }
