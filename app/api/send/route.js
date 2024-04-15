@@ -8,7 +8,7 @@ export async function POST(req) {
     try {
         const fromEmail = process.env.FROM_EMAIL;
         const { email, name, subject, message } = await req.json();
-        console.log(`Email: ${email.email} Subject: ${subject.subject} Message: ${message.message}`);
+        console.log(`Email: ${email} Name: ${name} Subject: ${subject} Message: ${message}`);
 
         const transport = nodemailer.createTransport({
             service: 'gmail',
