@@ -2,25 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import GithubIcon from "../../public/GithubIcon.png";
 import LinkedinIcon from "../../public/LinkedinIcon.png";
-// import { AppContext }from "@/app/context/context";
-import React, { useContext } from "react";
+import ContactForm from "./ContactForm";
+
 
 export default function Contact() {
-  async function createEmail(formData) {
-    "use server";
-    const rawFormData = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      subject: formData.get("subject"),
-      message: formData.get("message"),
-    };
-    console.log(JSON.stringify(rawFormData));
-  }
-
-  //   const handleFormSubmission = async (e) => {
-  //     e.preventDefault();
-  //     handleSubmit(e);
-  //   };
 
   return (
     <>
@@ -56,147 +41,7 @@ export default function Contact() {
             </Link>
           </div>
         </div>
-        <div>
-          <form action={createEmail} className="flex flex-col">
-            <div className="mb-6">
-              <label htmlFor="name" className="formElement.label">
-                Name
-              </label>
-              <input
-                type="name"
-                id="name"
-                name="name"
-                required
-                className="formElement.input"
-                placeholder="Enter your name"
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="email" className="formElement.label">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="formElement.input"
-                placeholder="Enter your email"
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="subject" className="formElement.label">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                required
-                className="formElement.input"
-                placeholder="Enter the subject"
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="message" className="formElement.label">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                className="formElement.input"
-                placeholder="Let's talk about..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-red-300 hover:bg-red-400  text-black font-medium py-2.5 px-5 rounded-lg w-full"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-        {/* <div>
-        {emailSubmitted ? (
-          <p className="text-green-800 text-xlg mt-2">
-            Email sent successfully!
-          </p>
-        ) : (
-            <form className="flex flex-col" >
-            <div className="mb-6">
-              <label
-                htmlFor="name"
-                className="text-black block mb-2 text-sm font-medium"
-              >
-                Name
-              </label>
-              <input
-                name="name"
-                type="text"
-                id="name"
-                required
-                className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                placeholder="Name"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-black block mb-2 text-sm font-medium"
-              >
-                Your email
-              </label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                required
-                className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-black block text-sm mb-2 font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-black block text-sm mb-2 font-medium"
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                type="text"
-                id="message"
-                required
-                className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-red-300 hover:bg-red-400  text-black font-medium py-2.5 px-5 rounded-lg w-full"
-            >
-              Send Message
-            </button>
-          </form>
-          )}
-        </div> */}
+          <ContactForm />
       </section>
     </>
   );
