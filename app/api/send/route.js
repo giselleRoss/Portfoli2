@@ -22,7 +22,7 @@ export async function POST(req) {
             from: fromEmail,
             to: [fromEmail, email],
             subject: subject,
-            html: `<h1>Hello ${firstName}${lastName}</h1>
+            html: `<h1>Hello ${firstName} ${lastName}</h1>
                 <p>Thank you for reaching out! I will reply shortly.</p>
                 <p>Subject: ${subject}</p>
                 <p>${message}</p>`
