@@ -77,15 +77,15 @@ const ContactForm = () => {
 
     if (spaceIndex === -1) {
       capitalizedFirstName =
-        fullName.charAt(0).toUpperCase() + fullName.slice(1);
+        fullName.charAt(0).toUpperCase() + fullName.slice(1).toLowerCase();
       capitalizedLastName = "!";
     } else {
       const firstName = fullName.slice(0, spaceIndex).trim();
       const lastName = fullName.slice(spaceIndex + 1).trim();
       capitalizedFirstName =
-        firstName.charAt(0).toUpperCase() + firstName.slice(1);
+        firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase();
       capitalizedLastName =
-        lastName.charAt(0).toUpperCase() + lastName.slice(1);
+        lastName.charAt(0).toUpperCase() + lastName.slice(1).toLowerCase();
     }
 
     const data = {
