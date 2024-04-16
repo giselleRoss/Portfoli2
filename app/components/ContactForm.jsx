@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+import EmailIcon from "@/public/email.svg"
 
 export const SubmitButton = ({formSubmit}) => {
   return (
     <button
       type="submit"
+      aria-busy={formSubmit}
       className={`relative bg-red-300 hover:bg-red-400 text-black font-medium py-2.5 px-5 rounded-lg w-full ${
         formSubmit ? 'opacity-50 cursor-not-allowed' : ''
       }`}
@@ -96,8 +99,9 @@ const ContactForm = () => {
   return (
     <div>
       {emailSubmitted ? (
-        <div className="border-solid border-4 border-y-emerald-400 text-center">
-          <p className="text-green-500 text-sm mt-2 p-10">Email sent successfully!</p>
+        <div className="shadow border-solid border-4 border-y-emerald-400 bg-gradient-to-r from-white/50 to-emerald-500/50 text-center">
+          
+          <p className="text-black text-md font-bold tracking-wide mt-2 p-10">Email sent successfully! <Image src={EmailIcon} className="w-12 h-12 inline-block" alt="email icon"/></p>
         </div>
         
       ) : (
