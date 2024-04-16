@@ -7,8 +7,8 @@ dotenv.config();
 export async function POST(req) {
     try {
         const fromEmail = process.env.FROM_EMAIL;
-        const { email, name, subject, message } = await req.json();
-        console.log(`Email: ${email} Name: ${name} Subject: ${subject} Message: ${message}`);
+        const { email, firstName, lastName, subject, message } = await req.json();
+        console.log(`Email: ${email} Name: ${firstName} Subject: ${subject} Message: ${message}`);
 
         const transport = nodemailer.createTransport({
             service: 'gmail',
@@ -22,7 +22,7 @@ export async function POST(req) {
             from: fromEmail,
             to: [fromEmail, email],
             subject: subject,
-            html: `<h1>Hello ${name}</h1>
+            html: `<h1>Hello ${firstName}${lastName}</h1>
                 <p>Thank you for reaching out! I will reply shortly.</p>
                 <p>Subject: ${subject}</p>
                 <p>${message}</p>`

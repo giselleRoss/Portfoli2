@@ -6,13 +6,13 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-    <main className="flex min-h-screen flex-col bg-amber-200">
+    <div className="min-h-screen flex flex-col bg-amber-200">
       <Header />
-      <div className="mt-24 mx-auto px-12 py-4">
+      <div className="flex-1 mt-24 mx-auto px-12 py-4">
         <HeroSection />
       </div>
       <Footer />
-    </main>
+    </div>
     </>
   );
 }
