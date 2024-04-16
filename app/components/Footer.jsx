@@ -22,11 +22,10 @@ export default function Footer() {
               href="https://www.linkedin.com/in/gisellerosstech"
             >
               <Image
-                src={LinkedinIcon}
-                alt="Linkedin Icon"
-                height={25}
-                width={25}
-              />
+  src={LinkedinIcon}
+  alt="Linkedin Icon"
+  style={{ width: 'auto', height: 'auto', maxHeight: '25px', maxWidth: '25px' }}
+/>
             </Link>
           </div>
 </div>

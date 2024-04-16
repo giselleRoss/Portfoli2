@@ -33,11 +33,10 @@ export default function Contact() {
               href="https://www.linkedin.com/in/gisellerosstech"
             >
               <Image
-                src={LinkedinIcon}
-                alt="Linkedin Icon"
-                height={50}
-                width={50}
-              />
+  src={LinkedinIcon}
+  alt="Linkedin Icon"
+  style={{ width: 'auto', height: 'auto', maxHeight: '50px', maxWidth: '50px' }}
+/>
             </Link>
           </div>
         </div>
