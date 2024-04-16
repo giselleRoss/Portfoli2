@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^14.0.5-canary.38",
+    "@vercel/speed-insights": "^1.0.10",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "next": "^14.1.4",
