@@ -40,7 +40,7 @@ export const HeroSection = () => {
               <div>
                 <Link
                   href="/contactMe"
-                  className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#CDFADB] to-[#CDFADB] hover:bg-slate-200 text-black"
+                  className="px-6 inline-block py-3 w-full sm:w-fit rounded-full hover:bg-pink-600 mr-4 bg-red-300  text-black"
                 >
                     Hire Me
                   
@@ -48,9 +48,9 @@ export const HeroSection = () => {
                 <Link
                   href="/GisellesResume.pdf"
                   target="_blank"
-                  className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#CDFADB] to-[#CDFADB] text-black mt-3"
+                  className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-red-100 to-pink-600 text-black mt-3"
                 >
-                  <span className="block bg-[#57b2d3] hover:bg-slate-800 rounded-full px-5 py-2">
+                  <span className="block bg-red-300 hover:bg-pink-600 rounded-full px-5 py-2">
                     Download CV
                   </span>
                 </Link>
@@ -62,7 +62,7 @@ export const HeroSection = () => {
           <div className="rounded-full bg-[#CDFADB] w-[250px] h-[250px] xl:w-[400px] xl:h-[400px] relative mx-auto sm:mx-0">
             <Image
               src="/minime.png"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute rounded-md transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={275}
               height={275}
               alt="Ai image"

@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+      @apply bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-50 via-amber-200 to-amber-50
+    }
+  }
 /* Path: app/tailwind.css */
