@@ -5,10 +5,10 @@ import pro from "../../public/pro.jpg";
 const Aboutme = () => {
   return (
     <>
-      <section className="bg-amber-200 text-gray-600 sm:text-center md:max-xl:flex pb-10 md:pb-20 lg:pb-32 font-serif body-font">
+      <section className="text-gray-600 sm:text-center md:max-xl:flex pb-10 md:pb-20 lg:pb-32 font-serif body-font">
         <div className="container px-5 mx-auto flex flex-wrap items-start justify-center md:justify-between">
           <div className="md:w-2/5 md:pr-6 mt-12 text-left">
-            <h2 className="sm:text-3xl text-2xl text-black-900 font-medium title-font mb-4">
+            <h2 className="sm:text-3xl text-2xl text-black-900 font-medium title-font text-center mb-4 bg-gradient-to-r  from-purple-400 to-pink-600 bg-[length:75%_6px] bg-no-repeat bg-bottom">
               My Story in Web Development
             </h2>
             <p className="leading-relaxed text-base">
