@@ -11,11 +11,11 @@ import pawMentor from "../../public/pawmentor.png"
 function PortfolioCom() {
   return (
     <>
-    <div className="bg-amber-200 text-gray-600 sm:text-center md:max-xl:flex p-8 md:p-16 lg:p-20 font-serif">
+    <div className="text-gray-600 sm:text-center md:max-xl:flex p-8 md:p-16 lg:p-20 font-serif">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <div className="p-4 bg-gray-200 rounded shadow-md">
       <p className="text-xl font-bold mb-4">Project 1</p>
-      <Link href="http://dadjokesproject.s3-website.us-east-2.amazonaws.com">
+      <Link target="_blank" href="http://dadjokesproject.s3-website.us-east-2.amazonaws.com">
         <Image src={dadJokes} alt="dad jokes" width={400} height={400} className="mt-5" />
       </Link>
       <p className="mt-4">
@@ -25,7 +25,7 @@ function PortfolioCom() {
 
     <div className="p-4 bg-gray-200 rounded shadow-md">
       <p className="text-xl font-bold mb-4">Project 2</p>
-      <Link href="paw-trainers.vercel.app">
+      <Link target="_blank" href="https://paw-trainers.vercel.app">
         <Image src={pawMentor} alt="paw mentor" width={400} height={400} className="mt-5" />
       </Link>
       <p className="mt-4">

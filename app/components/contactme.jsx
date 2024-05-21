@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="bg-amber-200 grid md:grid-cols-2 my-12 md:my-12 md:pb-24 lg:py-24 gap-6 relative">
+      <section className="grid md:grid-cols-2 my-12 md:my-12 md:pb-24 lg:py-24 gap-6 relative">
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-300 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 "></div>
         <div className="mr-16">
           <h5 className="text-xl font-bold text-black my-4">Let's Connect!</h5>
@@ -33,11 +33,10 @@ export default function Contact() {
               href="https://www.linkedin.com/in/gisellerosstech"
             >
               <Image
-                src={LinkedinIcon}
-                alt="Linkedin Icon"
-                height={50}
-                width={50}
-              />
+  src={LinkedinIcon}
+  alt="Linkedin Icon"
+  style={{ width: 'auto', height: 'auto', maxHeight: '50px', maxWidth: '50px' }}
+/>
             </Link>
           </div>
         </div>

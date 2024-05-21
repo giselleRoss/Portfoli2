@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 export default function About() {
   return (
     <>
-      <main className="flex min-h-screen flex-col bg-amber-200">
+      <main className="flex min-h-screen flex-col">
         <Header />
         <div className="mt-24 mx-auto px-12 py-4">
           <Aboutme />
