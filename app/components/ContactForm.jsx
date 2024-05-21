@@ -85,8 +85,8 @@ const ContactForm = () => {
   return (
     <div>
       {emailSubmitted ? (
-        <div className="shadow border-solid border-4 border-y-emerald-400 bg-gradient-to-r from-white/50 to-emerald-500/50 text-center">
-          <p className="text-black text-md font-bold tracking-wide mt-2 p-10">
+        <div className="shadow border-solid border-4 border-y-emerald-400 bg-gradient-to-r from-white/50 to-emerald-500/50 text-center p-6">
+        <p className="text-black text-md font-bold tracking-wide mt-2">
             Email sent successfully!{" "}
             <Image
               src={EmailIcon}
@@ -96,20 +96,17 @@ const ContactForm = () => {
           </p>
         </div>
       ) : (
-        <form className="flex flex-col" onSubmit={handleSubmit}>
-          <div className="mb-6">
-            <label
-              htmlFor="name"
-              className="text-black, block, mb-2, text-sm, font-medium, p-6"
-            >
-              Name
+        <form className="flex flex-col p-6" onSubmit={handleSubmit}>
+        <div className="mb-6">
+          <label htmlFor="name" className="text-black mb-2 text-sm font-medium">
+            Name
             </label>
             <input
               type="name"
               id="name"
               name="name"
               required
-              className="bg-white, border, border-[#33353F], placeholder-[#9CA2A9], text-black, text-sm, block, rounded-lg, w-full, py-2.5, px-5"
+              className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg w-full py-2.5 px-5"
               placeholder="Enter your name"
             />
             {error && (
@@ -121,7 +118,7 @@ const ContactForm = () => {
           <div className="mb-6">
             <label
               htmlFor="email"
-              className="text-black, block, mb-2, text-sm, font-medium, p-6"
+              className="text-black mb-2 text-sm font-medium"
             >
               Email
             </label>
@@ -131,7 +128,7 @@ const ContactForm = () => {
               name="email"
               required
               title="Please enter a valid email address"
-              className="bg-white, border, border-[#33353F], placeholder-[#9CA2A9], text-black, text-sm, block, rounded-lg, w-full, py-2.5, px-5"
+              className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg w-full py-2.5 px-5"
               placeholder="Enter your email"
             />
             {error && (
@@ -143,7 +140,7 @@ const ContactForm = () => {
           <div className="mb-6">
             <label
               htmlFor="subject"
-              className="text-black, block, mb-2, text-sm, font-medium, p-6"
+              className="text-black mb-2 text-sm font-medium"
             >
               Subject
             </label>
@@ -152,7 +149,7 @@ const ContactForm = () => {
               id="subject"
               name="subject"
               required
-              className="bg-white, border, border-[#33353F], placeholder-[#9CA2A9], text-black, text-sm, block, rounded-lg, w-full, py-2.5, px-5"
+              className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg w-full py-2.5 px-5"
               placeholder="Enter the subject"
             />
             {subjectError && (
@@ -164,7 +161,7 @@ const ContactForm = () => {
           <div className="mb-6">
             <label
               htmlFor="message"
-              className="text-black, block, mb-2, text-sm, font-medium, p-6"
+              className="text-black mb-2 text-sm font-medium"
             >
               Message
             </label>
@@ -172,7 +169,7 @@ const ContactForm = () => {
               id="message"
               name="message"
               required
-              className="bg-white, border, border-[#33353F], placeholder-[#9CA2A9], text-black, text-sm, block, rounded-lg, w-full, py-2.5, px-5"
+              className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg w-full py-2.5 px-5"
               placeholder="Let's talk about..."
             />
             {error && (
